@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1916C7D04E3242DEACA0A4CE /* libPods-BuyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F91E56264F1E22FC58C19AC7 /* libPods-BuyProject.a */; };
 		431DEB9C1D20CF1A006C66AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 431DEB9B1D20CF1A006C66AC /* main.m */; };
-		431DEB9F1D20CF1A006C66AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 431DEB9E1D20CF1A006C66AC /* AppDelegate.m */; };
-		431DEBA21D20CF1A006C66AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 431DEBA11D20CF1A006C66AC /* ViewController.m */; };
 		431DEBA51D20CF1A006C66AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431DEBA31D20CF1A006C66AC /* Main.storyboard */; };
-		431DEBA71D20CF1A006C66AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 431DEBA61D20CF1A006C66AC /* Assets.xcassets */; };
 		431DEBAA1D20CF1A006C66AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431DEBA81D20CF1A006C66AC /* LaunchScreen.storyboard */; };
 		431DEBB51D20CF1A006C66AC /* BuyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 431DEBB41D20CF1A006C66AC /* BuyProjectTests.m */; };
 		431DEBC01D20CF1A006C66AC /* BuyProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 431DEBBF1D20CF1A006C66AC /* BuyProjectUITests.m */; };
+		4388BDC01D226CF00079B4EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4388BDBD1D226CF00079B4EF /* AppDelegate.m */; };
+		4388BDC11D226CF00079B4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4388BDBE1D226CF00079B4EF /* Assets.xcassets */; };
+		4388BDC21D226CF00079B4EF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4388BDBF1D226CF00079B4EF /* Info.plist */; };
+		43CDEBD31D236CB000A8D69C /* BYMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDEBD21D236CB000A8D69C /* BYMainTabViewController.m */; };
+		43CDEBD61D236DFF00A8D69C /* BYPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDEBD51D236DFF00A8D69C /* BYPublicViewController.m */; };
+		43CDEBDB1D23719700A8D69C /* BYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDEBDA1D23719700A8D69C /* BYMainViewController.m */; };
+		43CDEBDE1D2371A900A8D69C /* BYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDEBDD1D2371A900A8D69C /* BYSettingViewController.m */; };
+		43CDEBE11D2371BC00A8D69C /* BYListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDEBE01D2371BC00A8D69C /* BYListViewController.m */; };
+		43CDEBE41D2372D500A8D69C /* BYPublicNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDEBE31D2372D500A8D69C /* BYPublicNavgationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,20 +44,34 @@
 /* Begin PBXFileReference section */
 		431DEB971D20CF1A006C66AC /* BuyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		431DEB9B1D20CF1A006C66AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		431DEB9D1D20CF1A006C66AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		431DEB9E1D20CF1A006C66AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		431DEBA01D20CF1A006C66AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		431DEBA11D20CF1A006C66AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		431DEBA41D20CF1A006C66AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		431DEBA61D20CF1A006C66AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		431DEBA91D20CF1A006C66AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		431DEBAB1D20CF1A006C66AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		431DEBB01D20CF1A006C66AC /* BuyProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuyProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		431DEBB41D20CF1A006C66AC /* BuyProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuyProjectTests.m; sourceTree = "<group>"; };
 		431DEBB61D20CF1A006C66AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		431DEBBB1D20CF1A006C66AC /* BuyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		431DEBBF1D20CF1A006C66AC /* BuyProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuyProjectUITests.m; sourceTree = "<group>"; };
 		431DEBC11D20CF1A006C66AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4388BDBC1D226CF00079B4EF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4388BDBD1D226CF00079B4EF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4388BDBE1D226CF00079B4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4388BDBF1D226CF00079B4EF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43CDEBD11D236CB000A8D69C /* BYMainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYMainTabViewController.h; sourceTree = "<group>"; };
+		43CDEBD21D236CB000A8D69C /* BYMainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYMainTabViewController.m; sourceTree = "<group>"; };
+		43CDEBD41D236DFF00A8D69C /* BYPublicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYPublicViewController.h; sourceTree = "<group>"; };
+		43CDEBD51D236DFF00A8D69C /* BYPublicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYPublicViewController.m; sourceTree = "<group>"; };
+		43CDEBD81D236EA200A8D69C /* MacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefine.h; sourceTree = "<group>"; };
+		43CDEBD91D23719700A8D69C /* BYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYMainViewController.h; sourceTree = "<group>"; };
+		43CDEBDA1D23719700A8D69C /* BYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYMainViewController.m; sourceTree = "<group>"; };
+		43CDEBDC1D2371A900A8D69C /* BYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYSettingViewController.h; sourceTree = "<group>"; };
+		43CDEBDD1D2371A900A8D69C /* BYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYSettingViewController.m; sourceTree = "<group>"; };
+		43CDEBDF1D2371BC00A8D69C /* BYListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYListViewController.h; sourceTree = "<group>"; };
+		43CDEBE01D2371BC00A8D69C /* BYListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYListViewController.m; sourceTree = "<group>"; };
+		43CDEBE21D2372D500A8D69C /* BYPublicNavgationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYPublicNavgationViewController.h; sourceTree = "<group>"; };
+		43CDEBE31D2372D500A8D69C /* BYPublicNavgationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYPublicNavgationViewController.m; sourceTree = "<group>"; };
+		767DADF49E742488FB4CFAD8 /* Pods-BuyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyProject/Pods-BuyProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D15E91B5EBD3D607EBFD95CC /* Pods-BuyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyProject/Pods-BuyProject.release.xcconfig"; sourceTree = "<group>"; };
+		F91E56264F1E22FC58C19AC7 /* libPods-BuyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1916C7D04E3242DEACA0A4CE /* libPods-BuyProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C32561680FA6B28630BBC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F91E56264F1E22FC58C19AC7 /* libPods-BuyProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		431DEB8E1D20CF1A006C66AC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +115,8 @@
 				431DEBB31D20CF1A006C66AC /* BuyProjectTests */,
 				431DEBBE1D20CF1A006C66AC /* BuyProjectUITests */,
 				431DEB981D20CF1A006C66AC /* Products */,
+				F943C85B7B4A55693467392A /* Pods */,
+				28C32561680FA6B28630BBC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +133,13 @@
 		431DEB991D20CF1A006C66AC /* BuyProject */ = {
 			isa = PBXGroup;
 			children = (
-				431DEB9D1D20CF1A006C66AC /* AppDelegate.h */,
-				431DEB9E1D20CF1A006C66AC /* AppDelegate.m */,
-				431DEBA01D20CF1A006C66AC /* ViewController.h */,
-				431DEBA11D20CF1A006C66AC /* ViewController.m */,
+				43CDEBB81D236C3600A8D69C /* All */,
+				4388BDBB1D226CF00079B4EF /* internet */,
 				431DEBA31D20CF1A006C66AC /* Main.storyboard */,
-				431DEBA61D20CF1A006C66AC /* Assets.xcassets */,
 				431DEBA81D20CF1A006C66AC /* LaunchScreen.storyboard */,
-				431DEBAB1D20CF1A006C66AC /* Info.plist */,
 				431DEB9A1D20CF1A006C66AC /* Supporting Files */,
+				43CDEBD11D236CB000A8D69C /* BYMainTabViewController.h */,
+				43CDEBD21D236CB000A8D69C /* BYMainTabViewController.m */,
 			);
 			path = BuyProject;
 			sourceTree = "<group>";
@@ -140,6 +170,236 @@
 			path = BuyProjectUITests;
 			sourceTree = "<group>";
 		};
+		4388BDBB1D226CF00079B4EF /* internet */ = {
+			isa = PBXGroup;
+			children = (
+				4388BDBC1D226CF00079B4EF /* AppDelegate.h */,
+				4388BDBD1D226CF00079B4EF /* AppDelegate.m */,
+				4388BDBE1D226CF00079B4EF /* Assets.xcassets */,
+				4388BDBF1D226CF00079B4EF /* Info.plist */,
+				43CDEBD81D236EA200A8D69C /* MacroDefine.h */,
+			);
+			path = internet;
+			sourceTree = "<group>";
+		};
+		43CDEBB81D236C3600A8D69C /* All */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBB91D236C3600A8D69C /* List */,
+				43CDEBBD1D236C3600A8D69C /* Main */,
+				43CDEBC11D236C3600A8D69C /* Public */,
+				43CDEBC51D236C3600A8D69C /* Setting */,
+				43CDEBC91D236C3600A8D69C /* User */,
+				43CDEBCD1D236C3600A8D69C /* Vendor */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+		43CDEBB91D236C3600A8D69C /* List */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBBA1D236C3600A8D69C /* Controller */,
+				43CDEBBB1D236C3600A8D69C /* Model */,
+				43CDEBBC1D236C3600A8D69C /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		43CDEBBA1D236C3600A8D69C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBDF1D2371BC00A8D69C /* BYListViewController.h */,
+				43CDEBE01D2371BC00A8D69C /* BYListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		43CDEBBB1D236C3600A8D69C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43CDEBBC1D236C3600A8D69C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43CDEBBD1D236C3600A8D69C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBBE1D236C3600A8D69C /* Controller */,
+				43CDEBBF1D236C3600A8D69C /* Model */,
+				43CDEBC01D236C3600A8D69C /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		43CDEBBE1D236C3600A8D69C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBD91D23719700A8D69C /* BYMainViewController.h */,
+				43CDEBDA1D23719700A8D69C /* BYMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		43CDEBBF1D236C3600A8D69C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43CDEBC01D236C3600A8D69C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43CDEBC11D236C3600A8D69C /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBC21D236C3600A8D69C /* Controller */,
+				43CDEBC31D236C3600A8D69C /* Model */,
+				43CDEBC41D236C3600A8D69C /* View */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		43CDEBC21D236C3600A8D69C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBD41D236DFF00A8D69C /* BYPublicViewController.h */,
+				43CDEBD51D236DFF00A8D69C /* BYPublicViewController.m */,
+				43CDEBE21D2372D500A8D69C /* BYPublicNavgationViewController.h */,
+				43CDEBE31D2372D500A8D69C /* BYPublicNavgationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		43CDEBC31D236C3600A8D69C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43CDEBC41D236C3600A8D69C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43CDEBC51D236C3600A8D69C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBC61D236C3600A8D69C /* Controller */,
+				43CDEBC71D236C3600A8D69C /* Model */,
+				43CDEBC81D236C3600A8D69C /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		43CDEBC61D236C3600A8D69C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBDC1D2371A900A8D69C /* BYSettingViewController.h */,
+				43CDEBDD1D2371A900A8D69C /* BYSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		43CDEBC71D236C3600A8D69C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43CDEBC81D236C3600A8D69C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43CDEBC91D236C3600A8D69C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBCA1D236C3600A8D69C /* Controller */,
+				43CDEBCB1D236C3600A8D69C /* Model */,
+				43CDEBCC1D236C3600A8D69C /* View */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		43CDEBCA1D236C3600A8D69C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		43CDEBCB1D236C3600A8D69C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43CDEBCC1D236C3600A8D69C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43CDEBCD1D236C3600A8D69C /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				43CDEBCE1D236C3600A8D69C /* Controller */,
+				43CDEBCF1D236C3600A8D69C /* Model */,
+				43CDEBD01D236C3600A8D69C /* View */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		43CDEBCE1D236C3600A8D69C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		43CDEBCF1D236C3600A8D69C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43CDEBD01D236C3600A8D69C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F943C85B7B4A55693467392A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				767DADF49E742488FB4CFAD8 /* Pods-BuyProject.debug.xcconfig */,
+				D15E91B5EBD3D607EBFD95CC /* Pods-BuyProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +407,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 431DEBC41D20CF1A006C66AC /* Build configuration list for PBXNativeTarget "BuyProject" */;
 			buildPhases = (
+				EFB80F11716A14A7DC3A1EE4 /* 📦 Check Pods Manifest.lock */,
 				431DEB931D20CF1A006C66AC /* Sources */,
 				431DEB941D20CF1A006C66AC /* Frameworks */,
 				431DEB951D20CF1A006C66AC /* Resources */,
+				3E938AFE7E51B5EEEF11F4D8 /* 📦 Embed Pods Frameworks */,
+				518F95F092F5A1841D5366BC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,8 +509,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4388BDC21D226CF00079B4EF /* Info.plist in Resources */,
 				431DEBAA1D20CF1A006C66AC /* LaunchScreen.storyboard in Resources */,
-				431DEBA71D20CF1A006C66AC /* Assets.xcassets in Resources */,
+				4388BDC11D226CF00079B4EF /* Assets.xcassets in Resources */,
 				431DEBA51D20CF1A006C66AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,14 +532,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E938AFE7E51B5EEEF11F4D8 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuyProject/Pods-BuyProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		518F95F092F5A1841D5366BC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuyProject/Pods-BuyProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB80F11716A14A7DC3A1EE4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		431DEB931D20CF1A006C66AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				431DEBA21D20CF1A006C66AC /* ViewController.m in Sources */,
-				431DEB9F1D20CF1A006C66AC /* AppDelegate.m in Sources */,
+				43CDEBDB1D23719700A8D69C /* BYMainViewController.m in Sources */,
+				43CDEBD61D236DFF00A8D69C /* BYPublicViewController.m in Sources */,
 				431DEB9C1D20CF1A006C66AC /* main.m in Sources */,
+				43CDEBE11D2371BC00A8D69C /* BYListViewController.m in Sources */,
+				43CDEBE41D2372D500A8D69C /* BYPublicNavgationViewController.m in Sources */,
+				43CDEBD31D236CB000A8D69C /* BYMainTabViewController.m in Sources */,
+				43CDEBDE1D2371A900A8D69C /* BYSettingViewController.m in Sources */,
+				4388BDC01D226CF00079B4EF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,9 +731,10 @@
 		};
 		431DEBC51D20CF1A006C66AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767DADF49E742488FB4CFAD8 /* Pods-BuyProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = BuyProject/Info.plist;
+				INFOPLIST_FILE = BuyProject/internet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LU.BuyProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,9 +743,10 @@
 		};
 		431DEBC61D20CF1A006C66AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15E91B5EBD3D607EBFD95CC /* Pods-BuyProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = BuyProject/Info.plist;
+				INFOPLIST_FILE = BuyProject/internet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LU.BuyProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,6 +820,7 @@
 				431DEBC61D20CF1A006C66AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		431DEBC71D20CF1A006C66AC /* Build configuration list for PBXNativeTarget "BuyProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +829,7 @@
 				431DEBC91D20CF1A006C66AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		431DEBCA1D20CF1A006C66AC /* Build configuration list for PBXNativeTarget "BuyProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +838,7 @@
 				431DEBCC1D20CF1A006C66AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
