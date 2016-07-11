@@ -14,6 +14,8 @@
 		431DEBB51D20CF1A006C66AC /* BuyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 431DEBB41D20CF1A006C66AC /* BuyProjectTests.m */; };
 		431DEBC01D20CF1A006C66AC /* BuyProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 431DEBBF1D20CF1A006C66AC /* BuyProjectUITests.m */; };
 		4359469F1D2E247F00CB31CA /* UIScrollView+TwitterCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 4359469E1D2E247F00CB31CA /* UIScrollView+TwitterCover.m */; };
+		435946A21D2E377300CB31CA /* BPUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435946A11D2E377300CB31CA /* BPUserLoginViewController.m */; };
+		435946A51D2E379C00CB31CA /* BPUserRigsterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435946A41D2E379C00CB31CA /* BPUserRigsterViewController.m */; };
 		4388BDC01D226CF00079B4EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4388BDBD1D226CF00079B4EF /* AppDelegate.m */; };
 		4388BDC11D226CF00079B4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4388BDBE1D226CF00079B4EF /* Assets.xcassets */; };
 		4388BDC21D226CF00079B4EF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4388BDBF1D226CF00079B4EF /* Info.plist */; };
@@ -55,6 +57,10 @@
 		431DEBC11D20CF1A006C66AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4359469D1D2E247F00CB31CA /* UIScrollView+TwitterCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TwitterCover.h"; sourceTree = "<group>"; };
 		4359469E1D2E247F00CB31CA /* UIScrollView+TwitterCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TwitterCover.m"; sourceTree = "<group>"; };
+		435946A01D2E377300CB31CA /* BPUserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPUserLoginViewController.h; sourceTree = "<group>"; };
+		435946A11D2E377300CB31CA /* BPUserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPUserLoginViewController.m; sourceTree = "<group>"; };
+		435946A31D2E379C00CB31CA /* BPUserRigsterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPUserRigsterViewController.h; sourceTree = "<group>"; };
+		435946A41D2E379C00CB31CA /* BPUserRigsterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPUserRigsterViewController.m; sourceTree = "<group>"; };
 		4388BDBC1D226CF00079B4EF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4388BDBD1D226CF00079B4EF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4388BDBE1D226CF00079B4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -354,6 +360,10 @@
 		43CDEBCA1D236C3600A8D69C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				435946A01D2E377300CB31CA /* BPUserLoginViewController.h */,
+				435946A11D2E377300CB31CA /* BPUserLoginViewController.m */,
+				435946A31D2E379C00CB31CA /* BPUserRigsterViewController.h */,
+				435946A41D2E379C00CB31CA /* BPUserRigsterViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -376,32 +386,8 @@
 			isa = PBXGroup;
 			children = (
 				4359469C1D2E247F00CB31CA /* TwitterCover */,
-				43CDEBCE1D236C3600A8D69C /* Controller */,
-				43CDEBCF1D236C3600A8D69C /* Model */,
-				43CDEBD01D236C3600A8D69C /* View */,
 			);
 			path = Vendor;
-			sourceTree = "<group>";
-		};
-		43CDEBCE1D236C3600A8D69C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		43CDEBCF1D236C3600A8D69C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		43CDEBD01D236C3600A8D69C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F943C85B7B4A55693467392A /* Pods */ = {
@@ -601,8 +587,10 @@
 				43CDEBDB1D23719700A8D69C /* BYMainViewController.m in Sources */,
 				43CDEBD61D236DFF00A8D69C /* BYPublicViewController.m in Sources */,
 				431DEB9C1D20CF1A006C66AC /* main.m in Sources */,
+				435946A21D2E377300CB31CA /* BPUserLoginViewController.m in Sources */,
 				43CDEBE11D2371BC00A8D69C /* BYListViewController.m in Sources */,
 				43CDEBE41D2372D500A8D69C /* BYPublicNavgationViewController.m in Sources */,
+				435946A51D2E379C00CB31CA /* BPUserRigsterViewController.m in Sources */,
 				43CDEBD31D236CB000A8D69C /* BYMainTabViewController.m in Sources */,
 				4359469F1D2E247F00CB31CA /* UIScrollView+TwitterCover.m in Sources */,
 				43CDEBDE1D2371A900A8D69C /* BYSettingViewController.m in Sources */,
@@ -697,7 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -735,7 +723,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

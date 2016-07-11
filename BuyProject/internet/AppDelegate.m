@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BYMainTabViewController.h"
+#import <BmobSDK/Bmob.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Bmob registerWithAppKey:@"47dea0552bbf43fef28f71035af88199"];
+    
+    
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
     BYMainTabViewController *mainTabVC=[[BYMainTabViewController alloc]init];

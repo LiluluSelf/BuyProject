@@ -9,6 +9,7 @@
 #import "BYSettingViewController.h"
 #import "MacroDefine.h"
 #import "UIScrollView+TwitterCover.h"
+#import "BPUserLoginViewController.h"
 @interface BYSettingViewController ()<UITableViewDataSource,UITableViewDelegate,UINavigationControllerDelegate>
 {
     UIView *topView;
@@ -49,6 +50,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"登录" style:UIBarButtonItemStylePlain target:self action:@selector(actionLogin:)];
+}
+- (void)actionLogin:(UIBarButtonItem *)item
+{
+    BPUserLoginViewController *userLogin=[[BPUserLoginViewController alloc]init];
+    userLogin.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:userLogin animated:YES];
 }
 
 
