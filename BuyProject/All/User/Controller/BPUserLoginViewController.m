@@ -1,4 +1,4 @@
-//
+;//
 //  BPUserLoginViewController.m
 //  BuyProject
 //
@@ -11,6 +11,7 @@
 #import "MacroDefine.h"
 #import <BmobSDK/Bmob.h>
 #import "BPUserRigsterViewController.h"
+#import "BPUserSearchPwdViewController.h"
 @interface BPUserLoginViewController ()
 @property (nonatomic, strong) UITextField *username;
 @property (nonatomic, strong) UITextField *password;
@@ -71,12 +72,33 @@
     
     UIButton *RigesterBtn=[UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:RigesterBtn];
-    RigesterBtn.frame=CGRectMake(200, height+64+160, SCREEN.width-240, 40);
+    RigesterBtn.frame=CGRectMake(210, height+64+160, SCREEN.width-260, 40);
     [RigesterBtn setTitle:@"注册" forState:UIControlStateNormal];
     [RigesterBtn setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
     RigesterBtn.backgroundColor=[UIColor orangeColor];
     RigesterBtn.layer.cornerRadius=20;
     [RigesterBtn addTarget:self action:@selector(RegisterClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    UIButton *searchPwdBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:searchPwdBtn];
+    searchPwdBtn.frame=CGRectMake(50, height+64+160, SCREEN.width-260, 40);
+    [searchPwdBtn setTitle:@"找回密码" forState:UIControlStateNormal];
+    [searchPwdBtn setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+    searchPwdBtn.backgroundColor=[UIColor orangeColor];
+    searchPwdBtn.layer.cornerRadius=20;
+    [searchPwdBtn addTarget:self action:@selector(searchPwd) forControlEvents:UIControlEventTouchUpInside];
+    
+    UILabel *otherLabel=[[UILabel alloc]initWithFrame:CGRectMake(150, height+460, SCREEN.width-260, 40)];
+    [self.view addSubview:otherLabel];
+    [otherLabel setText:@"或用以下方式登录"];
+    
+    UIView *lineView=[[UIView alloc]initWithFrame:CGRectMake(0, height+490, SCREEN.width, 1)];
+    [self.view addSubview:lineView];
+    lineView.backgroundColor=[UIColor blackColor];
+    
+    
+    
 }
 
 - (void)actionClick:(UIButton *)btn
@@ -96,6 +118,12 @@
 - (void)RegisterClick:(UIButton *)btn
 {
     BPUserRigsterViewController *vc=[[BPUserRigsterViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)searchPwd
+{
+    BPUserSearchPwdViewController *vc=[[BPUserSearchPwdViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

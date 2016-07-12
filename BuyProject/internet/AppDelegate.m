@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [Bmob registerWithAppKey:@"47dea0552bbf43fef28f71035af88199"];
+    [Bmob registerWithAppKey:@"adf41a227a4d4e13cd61fce0fc29f652"];
     
     
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];

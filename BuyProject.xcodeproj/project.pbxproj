@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		1916C7D04E3242DEACA0A4CE /* libPods-BuyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F91E56264F1E22FC58C19AC7 /* libPods-BuyProject.a */; };
 		431DEB9C1D20CF1A006C66AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 431DEB9B1D20CF1A006C66AC /* main.m */; };
-		431DEBA51D20CF1A006C66AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431DEBA31D20CF1A006C66AC /* Main.storyboard */; };
 		431DEBAA1D20CF1A006C66AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431DEBA81D20CF1A006C66AC /* LaunchScreen.storyboard */; };
 		431DEBB51D20CF1A006C66AC /* BuyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 431DEBB41D20CF1A006C66AC /* BuyProjectTests.m */; };
 		431DEBC01D20CF1A006C66AC /* BuyProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 431DEBBF1D20CF1A006C66AC /* BuyProjectUITests.m */; };
+		433ED6CF1D348EFF00AA4F33 /* BPUserSearchPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433ED6CE1D348EFF00AA4F33 /* BPUserSearchPwdViewController.m */; };
 		4359469F1D2E247F00CB31CA /* UIScrollView+TwitterCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 4359469E1D2E247F00CB31CA /* UIScrollView+TwitterCover.m */; };
 		435946A21D2E377300CB31CA /* BPUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435946A11D2E377300CB31CA /* BPUserLoginViewController.m */; };
 		435946A51D2E379C00CB31CA /* BPUserRigsterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435946A41D2E379C00CB31CA /* BPUserRigsterViewController.m */; };
@@ -47,7 +47,6 @@
 /* Begin PBXFileReference section */
 		431DEB971D20CF1A006C66AC /* BuyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		431DEB9B1D20CF1A006C66AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		431DEBA41D20CF1A006C66AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		431DEBA91D20CF1A006C66AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		431DEBB01D20CF1A006C66AC /* BuyProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuyProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		431DEBB41D20CF1A006C66AC /* BuyProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuyProjectTests.m; sourceTree = "<group>"; };
@@ -55,6 +54,9 @@
 		431DEBBB1D20CF1A006C66AC /* BuyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		431DEBBF1D20CF1A006C66AC /* BuyProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuyProjectUITests.m; sourceTree = "<group>"; };
 		431DEBC11D20CF1A006C66AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		433ED6CC1D348A7800AA4F33 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		433ED6CD1D348EFF00AA4F33 /* BPUserSearchPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPUserSearchPwdViewController.h; sourceTree = "<group>"; };
+		433ED6CE1D348EFF00AA4F33 /* BPUserSearchPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPUserSearchPwdViewController.m; sourceTree = "<group>"; };
 		4359469D1D2E247F00CB31CA /* UIScrollView+TwitterCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TwitterCover.h"; sourceTree = "<group>"; };
 		4359469E1D2E247F00CB31CA /* UIScrollView+TwitterCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TwitterCover.m"; sourceTree = "<group>"; };
 		435946A01D2E377300CB31CA /* BPUserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPUserLoginViewController.h; sourceTree = "<group>"; };
@@ -144,7 +146,6 @@
 			children = (
 				43CDEBB81D236C3600A8D69C /* All */,
 				4388BDBB1D226CF00079B4EF /* internet */,
-				431DEBA31D20CF1A006C66AC /* Main.storyboard */,
 				431DEBA81D20CF1A006C66AC /* LaunchScreen.storyboard */,
 				431DEB9A1D20CF1A006C66AC /* Supporting Files */,
 				43CDEBD11D236CB000A8D69C /* BYMainTabViewController.h */,
@@ -196,6 +197,7 @@
 				4388BDBE1D226CF00079B4EF /* Assets.xcassets */,
 				4388BDBF1D226CF00079B4EF /* Info.plist */,
 				43CDEBD81D236EA200A8D69C /* MacroDefine.h */,
+				433ED6CC1D348A7800AA4F33 /* PrefixHeader.pch */,
 			);
 			path = internet;
 			sourceTree = "<group>";
@@ -364,6 +366,8 @@
 				435946A11D2E377300CB31CA /* BPUserLoginViewController.m */,
 				435946A31D2E379C00CB31CA /* BPUserRigsterViewController.h */,
 				435946A41D2E379C00CB31CA /* BPUserRigsterViewController.m */,
+				433ED6CD1D348EFF00AA4F33 /* BPUserSearchPwdViewController.h */,
+				433ED6CE1D348EFF00AA4F33 /* BPUserSearchPwdViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -511,7 +515,6 @@
 				4388BDC21D226CF00079B4EF /* Info.plist in Resources */,
 				431DEBAA1D20CF1A006C66AC /* LaunchScreen.storyboard in Resources */,
 				4388BDC11D226CF00079B4EF /* Assets.xcassets in Resources */,
-				431DEBA51D20CF1A006C66AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +590,7 @@
 				43CDEBDB1D23719700A8D69C /* BYMainViewController.m in Sources */,
 				43CDEBD61D236DFF00A8D69C /* BYPublicViewController.m in Sources */,
 				431DEB9C1D20CF1A006C66AC /* main.m in Sources */,
+				433ED6CF1D348EFF00AA4F33 /* BPUserSearchPwdViewController.m in Sources */,
 				435946A21D2E377300CB31CA /* BPUserLoginViewController.m in Sources */,
 				43CDEBE11D2371BC00A8D69C /* BYListViewController.m in Sources */,
 				43CDEBE41D2372D500A8D69C /* BYPublicNavgationViewController.m in Sources */,
@@ -630,14 +634,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		431DEBA31D20CF1A006C66AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				431DEBA41D20CF1A006C66AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		431DEBA81D20CF1A006C66AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -736,6 +732,7 @@
 			baseConfigurationReference = 767DADF49E742488FB4CFAD8 /* Pods-BuyProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BuyProject/internet/PrefixHeader.pch";
 				INFOPLIST_FILE = BuyProject/internet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LU.BuyProject;
@@ -748,6 +745,7 @@
 			baseConfigurationReference = D15E91B5EBD3D607EBFD95CC /* Pods-BuyProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BuyProject/internet/PrefixHeader.pch";
 				INFOPLIST_FILE = BuyProject/internet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LU.BuyProject;
