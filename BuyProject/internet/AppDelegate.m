@@ -9,6 +9,12 @@
 #import "AppDelegate.h"
 #import "BYMainTabViewController.h"
 #import <BmobSDK/Bmob.h>
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+#import "WXApi.h"
+#import "WeiboSDK.h"
 @interface AppDelegate ()
 
 @end
@@ -18,15 +24,54 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [Bmob registerWithAppKey:@"adf41a227a4d4e13cd61fce0fc29f652"];
-    
-    
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
     BYMainTabViewController *mainTabVC=[[BYMainTabViewController alloc]init];
     self.window.rootViewController = mainTabVC;
     [self.window makeKeyAndVisible];
+    
+    [self shareSDK];
+    [self bmobSDK];
     return YES;
+}
+- (void)bmobSDK
+{
+    [Bmob registerWithAppKey:@"adf41a227a4d4e13cd61fce0fc29f652"];
+}
+- (void)shareSDK
+{
+    //shareSDK appkey 14db60589230a
+    
+    [ShareSDK registerApp:@"14db60589230a" activePlatforms:@[@(SSDKPlatformTypeSinaWeibo),@(SSDKPlatformTypeWechat),@(SSDKPlatformTypeQQ)] onImport:^(SSDKPlatformType platformType) {
+        switch (platformType) {
+            case SSDKPlatformTypeQQ:
+                [ShareSDKConnector connectQQ:[QQApiInterface class] tencentOAuthClass:[TencentOAuth class]];
+                break;
+            case SSDKPlatformTypeWechat:
+                [ShareSDKConnector connectWeChat:[WXApi class] delegate:self];
+                break;
+            case SSDKPlatformTypeSinaWeibo:
+                [ShareSDKConnector connectWeibo:[WeiboSDK class]];
+                break;
+            default:
+                break;
+        }
+    } onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo) {
+        switch (platformType) {
+            case SSDKPlatformTypeSinaWeibo:
+                [appInfo SSDKSetupSinaWeiboByAppKey:@"" appSecret:@"" redirectUri:@"" authType:@""];
+                break;
+            case SSDKPlatformTypeQQ:
+                [appInfo SSDKSetupQQByAppId:@"" appKey:@"" authType:SSDKAuthTypeBoth];
+                break;
+            case SSDKPlatformTypeWechat:
+                [appInfo SSDKSetupWeChatByAppId:@"" appSecret:@""];
+                break;
+                
+            default:
+                break;
+        }
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

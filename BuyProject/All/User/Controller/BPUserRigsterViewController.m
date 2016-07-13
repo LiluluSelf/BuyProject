@@ -7,8 +7,6 @@
 //
 
 #import "BPUserRigsterViewController.h"
-#import <GPUImage/GPUImage.h>
-//#import "MacroDefine.h"
 
 @interface BPUserRigsterViewController ()
 @property (nonatomic, strong) UITextField *username;

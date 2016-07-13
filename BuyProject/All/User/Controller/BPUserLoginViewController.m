@@ -7,11 +7,10 @@
 //
 
 #import "BPUserLoginViewController.h"
-#import <GPUImage/GPUImage.h>
-#import "MacroDefine.h"
-#import <BmobSDK/Bmob.h>
 #import "BPUserRigsterViewController.h"
 #import "BPUserSearchPwdViewController.h"
+
+#define Button_Base_Tag 100
 @interface BPUserLoginViewController ()
 @property (nonatomic, strong) UITextField *username;
 @property (nonatomic, strong) UITextField *password;
@@ -23,6 +22,11 @@
 - (void)viewDidLoad
 {
     self.title=@"登录";
+    [self setControl];
+}
+#pragma -mark 页面控件
+- (void)setControl
+{
     self.view.backgroundColor=[UIColor orangeColor];
     GPUImageGaussianBlurFilter *blurFilter=[[GPUImageGaussianBlurFilter alloc]init];
     blurFilter.blurRadiusInPixels=5.0;
@@ -89,16 +93,54 @@
     searchPwdBtn.layer.cornerRadius=20;
     [searchPwdBtn addTarget:self action:@selector(searchPwd) forControlEvents:UIControlEventTouchUpInside];
     
-    UILabel *otherLabel=[[UILabel alloc]initWithFrame:CGRectMake(150, height+460, SCREEN.width-260, 40)];
+    UILabel *otherLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, height+460, SCREEN.width, 40)];
     [self.view addSubview:otherLabel];
     [otherLabel setText:@"或用以下方式登录"];
+    otherLabel.textAlignment=NSTextAlignmentCenter;
+    otherLabel.font=[UIFont systemFontOfSize:13.0];
+    otherLabel.textColor=[UIColor whiteColor];
     
     UIView *lineView=[[UIView alloc]initWithFrame:CGRectMake(0, height+490, SCREEN.width, 1)];
     [self.view addSubview:lineView];
     lineView.backgroundColor=[UIColor blackColor];
+    lineView.alpha=0.5;
     
+    CGFloat width =60;
     
-    
+    NSArray *imageArray=@[[UIImage imageNamed:@"qq"],[UIImage imageNamed:@"weibo"],[UIImage imageNamed:@"weixin"]];
+    NSArray *colorArray=@[COLOR(82, 152, 205),COLOR(205, 100, 48),COLOR(134, 202, 101)];
+    CGFloat distant=(SCREEN.width - width*imageArray.count)/(imageArray.count +1);
+    for (NSInteger i=0; i<imageArray.count; i++) {
+        UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame=CGRectMake((distant *(i%imageArray.count+1)+width*(i%imageArray.count)), SCREEN.height-140, width, width);
+        [self.view addSubview:btn];
+        btn.layer.cornerRadius=width/2;
+        
+        [btn setImage:imageArray[i] forState:UIControlStateNormal];
+        [btn setBackgroundColor:colorArray[i]];
+        [btn addTarget:self action:@selector(actionThirdLogin:) forControlEvents:UIControlEventTouchUpInside];
+        btn.tag=Button_Base_Tag +i ;
+    }
+}
+
+#pragma - mark 第三方登录方法
+- (void)actionThirdLogin:(UIButton *)btn
+{
+   
+    NSInteger tag=btn.tag;
+    switch (tag) {
+        case Button_Base_Tag://qq
+             NSLog(@"qq第三方登录");
+            break;
+        case Button_Base_Tag+1://weibo
+             NSLog(@"wb第三方登录");
+            break;
+        case Button_Base_Tag+2://weixin
+             NSLog(@"wx第三方登录");
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)actionClick:(UIButton *)btn
